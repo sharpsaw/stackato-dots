@@ -1,0 +1,21 @@
+#!/bin/sh -xe
+## (Note: Is vaporware at the moment.) - Will help with app creation
+
+exit 99
+# Dep:
+# hub || prompt-install
+# git-dots
+
+# Invoked:
+# stackup https://github.com/malclocke/fulcrum
+GITHUB_USER=(Stackato-Apps|env var|user-input)
+hub fork
+git clone
+mkdir -p .paas/stackato
+cp $DOTDOTDOT_ROOT/stackato-dots/default-stackato.yml $_
+      ^ Has all options commented out
+      ^ Has the smartdummy server
+ln -s .paas/stackato/stackato.yml .
+s push
+s ssh
+vim .paas/stackato/stackato.yml
